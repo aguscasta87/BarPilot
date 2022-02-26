@@ -82,6 +82,36 @@ padding-left: 30px;
 padding-right: 30px;
 padding-bottom: 30px;
 }
+.fotos{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 200px 200px;
+   grid-template-areas: "c1 c1 c1"
+                         "c2 c3 c4";
+   justify-items: center;
+   align-items: center;
+}
+.img0{
+   grid-area: c1;
+   width: 90%;
+   height: 90%;
+}
+.img1{
+   grid-area: c2;
+   width: 90%;
+   height: 90%;
+}
+.img2{
+   grid-area: c3;
+   width: 90%;
+   height: 90%;
+}
+.img3{
+   grid-area: c4;
+   width: 90%;
+   height: 90%;
+}
+
 h3{
    padding: 20px;
    display: flex;
