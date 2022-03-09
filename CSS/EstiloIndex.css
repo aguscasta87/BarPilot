@@ -295,7 +295,7 @@ a {
 .titulo {
    background-image:url(../Images/First\ Class\ Champ.jpg);   
    background-repeat: no-repeat;
-   background-size: cover;
+   width: 100%;
    background-position: center;  
    grid-area: titulo;
 }
@@ -306,8 +306,9 @@ h1{
    color: rgb(249, 249, 249);
    text-align: center;
    text-overflow: inherit;
-   text-shadow: 0 8px  0 rgb(71, 71, 71);}
-   
+   text-shadow: 0 8px  0 rgb(71, 71, 71);
+   grid-area: titulo;
+}
    .crew {
       display: grid;
       grid-template-columns: 1fr;
