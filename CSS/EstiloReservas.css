@@ -27,7 +27,7 @@ header{
    grid-area: navegador;
    
 }
-a {
+#buttonnav {
    display: inline-block; 
    text-decoration: none;
    padding-left: 30px;
@@ -129,3 +129,122 @@ a {
  h6{
     padding-top: 10px;
  }
+ @media only screen and (max-width: 600px){
+   *
+   {
+      margin:0%;
+      padding: 0%;
+   }
+ 
+    header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px;
+    grid-template-areas: "navegador titulo titulo";
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #000;}
+
+  .header-lista{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    grid-area: navegador;
+    width: 100%; }
+ .nav{
+    list-style: none;
+    width: 30px;
+    grid-area: navegador;
+ }
+ #buttonnav {
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: rgb(240, 222, 222);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    grid-area: navegador;
+    
+ }
+ #buttonnav:hover{
+   color:rgb(227, 231, 238);
+   font-size: 25px;
+   text-shadow: 0 5px  3px rgb(221, 124, 32);
+   transform: translate( 5px, 5px );}
+}
+.title{
+   background-image:url(../Images/checkin.jpg);   
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;  
+   height: 200px;
+   width: 400px;
+}
+#parrafo1{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   text-align: center;
+   padding-top: 15px; 
+   padding-bottom: 10px;
+  }
+H1 {
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+   color: rgba(30, 44, 238, 0.863);
+   text-align: center;
+   text-overflow: inherit;
+   padding-top: 10px;  
+}
+h2{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 10px;
+  
+   color: rgb(235, 49, 49);
+   text-align: center;
+   text-overflow: inherit;
+   padding-top: 10px;  
+}
+.section1{
+   margin: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.section2{
+   border-color: rgb(12, 12, 80);
+   border-width: 10px;
+   border-style: double;
+   justify-content: center;
+margin: 5%;
+padding: 5%;
+}
+.form{
+   padding: 5%;
+   line-height: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
+  
+}
+.button{
+  outline: none;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  background-color: blue;
+  color: antiquewhite;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8rem;
+}

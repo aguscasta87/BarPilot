@@ -18,16 +18,16 @@ header{
    list-style-type: none;
    display: inline-block;
    justify-content: space-between;
-   grid-area: navegador;
+   grid-area: "navegador";
    width: 100%;
 }
 .nav{
    list-style: none;
    width: 30px;
-   grid-area: navegador;
+   grid-area: "navegador";
    
 }
-a {
+#buttonnav {
    display: inline-block; 
    text-decoration: none;
    padding-left: 30px;
@@ -37,7 +37,7 @@ a {
    font-size: 15px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: bold;
-   grid-area: navegador;
+   grid-area: "navegador";
    
 }
 #buttonnav:hover{
@@ -133,3 +133,132 @@ p{
  h6{
     padding-top: 10px;
  }
+ @media only screen and (max-width: 600px){
+   *
+   {
+      margin:0%;
+      padding: 0%;
+   }
+ 
+    header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px;
+    grid-template-areas: "navegador titulo titulo";
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #000;}
+  .header-lista{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    grid-area: navegador;
+    width: 100%; }
+ .nav{
+    list-style: none;
+    width: 30px;
+    grid-area: navegador;
+ }
+ #buttonnav {
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: rgb(240, 222, 222);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    grid-area: navegador;
+    
+ }
+ #buttonnav:hover{
+   color:rgb(227, 231, 238);
+   font-size: 25px;
+   text-shadow: 0 5px  3px rgb(221, 124, 32);
+   transform: translate( 5px, 5px );
+
+}
+ .vino{
+     list-style: none;
+     padding: 10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .title{
+    background-image:url(../Images/para\ carta.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    grid-area: "titulo";
+ }
+ #parrafo1{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(197, 10, 10, 0.863);
+    text-decoration: overline black;
+    text-align: center;
+    text-overflow: inherit;
+    padding-top: 10px; 
+    padding-bottom: 30px; 
+    grid-area: "titulo";
+ }
+ H1 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(9, 7, 131, 0.863);
+    text-align: center;
+    text-overflow: inherit;
+    padding: 20px;
+    height: 120px;
+    width: 300px;
+    grid-area: "titulo";
+ }
+
+p{
+    font-style: italic;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.listas{
+    text-align: justify;
+    list-style: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(231, 222, 222); 
+    width: 260px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   line-height: 23px;
+   background-color: rgb(150, 139, 243);
+
+
+}
+#entrada{
+   grid-area: "entrada";
+   
+}
+#bebida{
+   grid-area: "bebida";
+}
+#principal{
+   grid-area: "principal";
+
+}
+#postre{
+   grid-area: "postre";
+}
+h2{
+    padding-left: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(252, 16, 16);
+    text-align: center;
+ }
+}
