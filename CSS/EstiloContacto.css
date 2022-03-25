@@ -48,7 +48,7 @@ header{
 
 }
  .title{
-    background-image:url(../Images/cockpit.jpg);   
+    background-image:url(../Images/cockpit_ccexpress.png);   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -72,7 +72,7 @@ margin: 30px;
   
  }
 .form{
-   background-image: url(../Images/jet2.jpg);
+   background-image: url(../Images/jet2_ccexpress.png);
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 40px;
@@ -162,7 +162,7 @@ margin: 30px;
    transform: translate( 5px, 5px );}
 }
 .title{
-   background-image:url(../Images/cockpit.jpg);   
+   background-image:url(../Images/cockpit_ccexpress.png);   
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -186,7 +186,7 @@ H1 {
  
 }
 .form{
-  background-image: url(../Images/jet2.jpg);
+  background-image: url(../Images/jet2_ccexpress.png);
   margin: 5%;
    padding: 5%;
    

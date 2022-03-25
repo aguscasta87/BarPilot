@@ -48,7 +48,7 @@ header{
 
 }
  .title{
-    background-image:url(../Images/checkin.jpg);   
+    background-image:url(../Images/checkin_ccexpress.png);   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -179,7 +179,7 @@ header{
    transform: translate( 5px, 5px );}
 }
 .title{
-   background-image:url(../Images/checkin.jpg);   
+   background-image:url(../Images/checkin_ccexpress.png);   
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;  
